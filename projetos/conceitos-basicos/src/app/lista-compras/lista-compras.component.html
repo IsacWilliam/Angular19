@@ -1,0 +1,48 @@
+<div class="container">
+    <h1>Lista de Compras</h1>
+
+    <form #frm="ngForm" class="add-item-form" (ngSubmit)="adicionarItem()">
+        <input type="text"
+               id="item"
+               name="item"
+               [(ngModel)]="item" placeholder="Digite o nome do item"
+            />
+        
+        <button type="submit">Adicionar</button>
+        <button type="button" (click)="limparLista()">Limpar Lista</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Item</th>
+                <th>Check</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Usando IF nativo do Angular -->
+            @for (elemento of lista; track elemento.id) {
+                <tr>
+                    <td>{{ elemento.id }}</td>
+                    <td>
+                        <span [ngClass]="{ 'item-riscado' : elemento.comprado}">{{ elemento.nome }}</span>
+                    </td>
+                    <td><input type="checkbox"
+                            (click)="riscarItem(elemento)"
+                            [checked]="elemento.comprado"
+                        />
+                </tr>
+            }@empty {
+                <tr colspan="3">Nenhum item adiciondo.</tr>
+            }
+
+            <!-- Usando IF do CommonModule -->
+            <!-- <tr *ngFor="let elemento of lista">
+                <td>{{ elemento.id }}</td>
+                <td>{{ elemento.nome }}</td>
+                <td><input type="checkbox" /></td>
+            </tr> -->
+        </tbody>
+    </table>
+</div>
