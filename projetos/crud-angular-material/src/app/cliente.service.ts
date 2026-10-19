@@ -22,9 +22,17 @@ export class ClienteService {
       if(c.id === cliente.id){
         Object.assign(c, cliente);
       }
-
-      localStorage.setItem(ClienteService.REPO_CLIENTES, JSON.stringify(storage));
     })
+    
+    localStorage.setItem(ClienteService.REPO_CLIENTES, JSON.stringify(storage));
+  }
+
+  deletar(cliente: Cliente){
+    const storage = this.obterStorage();
+
+    const novaLista = storage.filter(c => c.id !== cliente.id);
+
+    localStorage.setItem(ClienteService.REPO_CLIENTES, JSON.stringify(novaLista));
   }
 
   pesquisarClientes(nomeBusca: string): Cliente[]{
@@ -46,9 +54,16 @@ export class ClienteService {
   private obterStorage(): Cliente[]{
     const repositorioClientes = localStorage.getItem(ClienteService.REPO_CLIENTES);
     if(repositorioClientes){
-      const clientes: Cliente[] = JSON.parse(repositorioClientes);
+      try {
+        const clientes: Cliente[] = JSON.parse(repositorioClientes);
 
-      return clientes;
+        if(Array.isArray(clientes)) {
+          return clientes;
+        }
+      }catch(e){
+        console.log(e);
+        //Se o JSON estiver corrompido, ignora e cria um novo abaixo.
+      }
     }
 
     const clientes: Cliente[] = [];
