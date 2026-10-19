@@ -15,7 +15,7 @@
                                     type="text" 
                                     [(ngModel)]="cliente.nome"
                                     name="nome"
-                                    placeholder="Ex: Marisa Monte"
+                                    placeholder="Marisa Monte"
                                     matInput
                                 />
                             </mat-form-field>
@@ -45,7 +45,8 @@
                                     type="text" 
                                     [(ngModel)]="cliente.cpf"
                                     name="cpf"
-                                    placeholder="Ex: 012.345.678-99"
+                                    mask="000.000.000-00"
+                                    placeholder="000.000.000-00"
                                     matInput
                                 />
                             </mat-form-field>
@@ -60,6 +61,7 @@
                                     type="text" 
                                     [(ngModel)]="cliente.dataNascimento"
                                     name="dataNascimento"
+                                    mask="00/00/0000"
                                     matInput
                                 />
                             </mat-form-field>
