@@ -4,11 +4,6 @@
       "id": "1",
       "nome": "Restaurantes",
       "descricao": "Locais para alimentação"
-    },
-    {
-      "id": "hLFSESDJIiA",
-      "nome": "Cachoeiras",
-      "descricao": "Locais para passear e descansar."
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
