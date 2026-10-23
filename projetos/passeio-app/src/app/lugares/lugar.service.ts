@@ -14,7 +14,7 @@ export class LugarService {
     return this.http.post<Lugar>('http://localhost:3000/lugares', lugar);
   }
 
-  obterTodosLugares(): Observable<Lugar> {
-    return this.http.get<Lugar>('http://localhost:3000/lugares');
+  obterTodosLugares(): Observable<Lugar[]> {
+    return this.http.get<Lugar[]>('http://localhost:3000/lugares');
   }
 }

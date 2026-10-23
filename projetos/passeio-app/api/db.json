@@ -23,36 +23,20 @@
   ],
   "lugares": [
     {
-      "nome": "Cachoeira das Sete Quedas",
-      "categoria": "Piscinão",
-      "localizacao": "MG",
-      "urlFoto": "asd",
-      "avaliacao": "5",
-      "id": "JVOi5mUrFXM"
-    },
-    {
-      "nome": "Cachoeirinha dos Campos",
-      "categoria": "Cachoeiras",
-      "localizacao": "Itauna",
-      "urlFoto": "gfgf",
-      "avaliacao": "4",
-      "id": "0MyhHxb8-RQ"
-    },
-    {
-      "nome": "teste",
-      "categoria": "Casas de Shows",
-      "localizacao": "RS",
-      "urlFoto": "fdfgf",
-      "avaliacao": "4",
-      "id": "rm9xEZxVCWQ"
-    },
-    {
       "nome": "Cachoeira do Indio",
       "categoria": "Cachoeiras",
-      "localizacao": "MG",
+      "localizacao": "Rio Acima - MG",
       "urlFoto": "https://s0.wklcdn.com/image_258/7746701/61274483/77108079Master.jpg",
       "avaliacao": "5",
-      "id": "xxNZsIHQVPA"
+      "id": "1"
+    },
+    {
+      "nome": "Cachoeirinha Povoado dos Campos",
+      "categoria": "Cachoeiras",
+      "localizacao": "Itaúna - MG",
+      "urlFoto": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QVo07sabWaZvt3pBMe0LyW81bJOLnf5d5oCVf-IUopFlQzxBGpyqhFJyCLnTZEw87JEmbN9YowoXmLVQ-JllU1Nf_qL3MrsFpUvozhs2Um7oMgjCsXYP0nWd43E7qYGuYObVSW8A=s680-w680-h510",
+      "avaliacao": "3",
+      "id": "2"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
