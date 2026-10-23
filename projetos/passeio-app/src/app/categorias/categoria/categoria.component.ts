@@ -22,7 +22,7 @@ export class CategoriaComponent {
     this.camposForm.markAllAsTouched();
 
     if(this.camposForm.valid){
-      this.service.salvar(this.camposForm.value)
+      this.service.salvarCategoria(this.camposForm.value)
       .subscribe({
         next: categoria => {
           console.log('Salvo com sucesso! ', categoria);

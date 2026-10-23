@@ -4,6 +4,55 @@
       "id": "1",
       "nome": "Restaurantes",
       "descricao": "Locais para alimentação"
+    },
+    {
+      "nome": "Piscinão",
+      "descricao": "Piscina pública",
+      "id": "xfrknNr3y2Q"
+    },
+    {
+      "nome": "Casas de Shows",
+      "descricao": "Marista Hall - Shows toda semana",
+      "id": "dAl5H6irL0E"
+    },
+    {
+      "nome": "Cachoeiras",
+      "descricao": "Cachoeiras,cascatas, rios e lagoas",
+      "id": "o_rTTr8zs4I"
+    }
+  ],
+  "lugares": [
+    {
+      "nome": "Cachoeira das Sete Quedas",
+      "categoria": "Piscinão",
+      "localizacao": "MG",
+      "urlFoto": "asd",
+      "avaliacao": "5",
+      "id": "JVOi5mUrFXM"
+    },
+    {
+      "nome": "Cachoeirinha dos Campos",
+      "categoria": "Cachoeiras",
+      "localizacao": "Itauna",
+      "urlFoto": "gfgf",
+      "avaliacao": "4",
+      "id": "0MyhHxb8-RQ"
+    },
+    {
+      "nome": "teste",
+      "categoria": "Casas de Shows",
+      "localizacao": "RS",
+      "urlFoto": "fdfgf",
+      "avaliacao": "4",
+      "id": "rm9xEZxVCWQ"
+    },
+    {
+      "nome": "Cachoeira do Indio",
+      "categoria": "Cachoeiras",
+      "localizacao": "MG",
+      "urlFoto": "https://s0.wklcdn.com/image_258/7746701/61274483/77108079Master.jpg",
+      "avaliacao": "5",
+      "id": "xxNZsIHQVPA"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
