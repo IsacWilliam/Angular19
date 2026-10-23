@@ -37,6 +37,22 @@
       "urlFoto": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QVo07sabWaZvt3pBMe0LyW81bJOLnf5d5oCVf-IUopFlQzxBGpyqhFJyCLnTZEw87JEmbN9YowoXmLVQ-JllU1Nf_qL3MrsFpUvozhs2Um7oMgjCsXYP0nWd43E7qYGuYObVSW8A=s680-w680-h510",
       "avaliacao": "3",
       "id": "2"
+    },
+    {
+      "nome": "Restaurante da Celinha",
+      "categoria": "Restaurantes",
+      "localizacao": "Itabirito - MG",
+      "urlFoto": "https://lh3.googleusercontent.com/grass-cs/AABkmLfGZKECVwfCzBk0xGyhJzrR04DlZumnH7FByJ3-qob0sPduUyJV_l4lK065GerchTmTBnZPd_gd6BApNUM9ThCdCis5c7f3wF8j9urfEdzLKG5ScavcspCPEAury6JSwLMwBtrLcQ=s680-w680-h510",
+      "avaliacao": "4",
+      "id": "xDr2tR4TgQg"
+    },
+    {
+      "nome": "Piscinão de Ramos",
+      "categoria": "Piscinão",
+      "localizacao": "RJ",
+      "urlFoto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLVqcPA52tjAva5z5ImKPmLsq7kTz3Ta-h4ZAmHk3PKBa5b_v5xuRPIJSn&s=10",
+      "avaliacao": "2",
+      "id": "MkNE0orngO8"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
