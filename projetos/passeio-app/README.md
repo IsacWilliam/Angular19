@@ -65,10 +65,10 @@ Para simular o comportamento e carregar os dados da base de produção local:
 | Comando | Descrição |
 | :--- | :--- |
 | `npm start` | Inicia o servidor Angular integrado ao proxy de Desenvolvimento (Porta 3000). |
-| `npm run start:prod` | Inicia o servidor Angular integrado ao proxy de Produção (Porta 4000). |
+| `npm run start:production` | Inicia o servidor Angular integrado ao proxy de Produção (Porta 4000). |
 | `npm run server` | Inicializa o `json-server` na porta 3000 com o arquivo `db.json`. |
 | `npm run server:production` | Inicializa o `json-server` na porta 4000 com o arquivo `db.production.json` e CORS liberado. |
-| `npm run build` | Compila a aplicação e gera os arquivos estáticos de produção na pasta `dist/`. |
+| `npm run build --prod` | Compila a aplicação e gera os arquivos estáticos de produção na pasta `dist/`. |
 | `npm test` | Executa os testes unitários da aplicação utilizando o Karma. |
 
 ---
