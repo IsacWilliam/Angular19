@@ -1,0 +1,43 @@
+{
+  "categorias": [
+    {
+      "id": "1",
+      "nome": "Restaurantes",
+      "descricao": "Locais para alimentação"
+    },
+    {
+      "nome": "Piscinão",
+      "descricao": "Piscina pública",
+      "id": "xfrknNr3y2Q"
+    },
+    {
+      "nome": "Casas de Shows",
+      "descricao": "Marista Hall - Shows toda semana",
+      "id": "dAl5H6irL0E"
+    },
+    {
+      "nome": "Cachoeiras",
+      "descricao": "Cachoeiras,cascatas, rios e lagoas",
+      "id": "o_rTTr8zs4I"
+    }
+  ],
+  "lugares": [
+    {
+      "nome": "Cachoeira do Indio",
+      "categoria": "Cachoeiras",
+      "localizacao": "Rio Acima - MG",
+      "urlFoto": "https://s0.wklcdn.com/image_258/7746701/61274483/77108079Master.jpg",
+      "avaliacao": "5",
+      "id": "1"
+    },
+    {
+      "nome": "Restaurante da Celinha",
+      "categoria": "Restaurantes",
+      "localizacao": "Itabirito - MG",
+      "urlFoto": "https://lh3.googleusercontent.com/grass-cs/AABkmLfGZKECVwfCzBk0xGyhJzrR04DlZumnH7FByJ3-qob0sPduUyJV_l4lK065GerchTmTBnZPd_gd6BApNUM9ThCdCis5c7f3wF8j9urfEdzLKG5ScavcspCPEAury6JSwLMwBtrLcQ=s680-w680-h510",
+      "avaliacao": "4",
+      "id": "xDr2tR4TgQg"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
