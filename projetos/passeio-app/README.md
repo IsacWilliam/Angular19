@@ -78,3 +78,29 @@ Para simular o comportamento e carregar os dados da base de produção local:
 * `src/environments/environment.ts`: Armazena as configurações globais da aplicação utilizando o prefixo `/api` para o redirecionamento do proxy.
 * `proxy.conf.dev.json`: Configura o redirecionamento de chamadas do frontend para o servidor local na porta `3000`.
 * `proxy.conf.prod.json`: Configura o redirecionamento de chamadas do frontend para o servidor simulado de produção na porta `4000`.
+
+# DOCKER
+## docker logs cursoangular-app-container
+(Esse comando vai revelar a linha exata do erro ao iniciar o Nginx).
+
+# 1. Cria uma rede interna chamada "rede-app"
+docker network create rede-app
+
+# 2. Para e remove o container do Angular que travou (e o da API antigo)
+docker stop cursoangular-app-container cursoangular-api-container
+docker rm cursoangular-app-container cursoangular-api-container
+
+# 3. Roda a sua API conectada à nova rede (Mantenha o nome exato usado no nginx.conf)
+docker run -d -p 4000:4000 \
+  --name cursoangular-api-container \
+  --network rede-app \
+  cursoangular-api:latest
+
+# 4. Reconstrói a imagem do Angular com o novo nginx.conf corrigido
+docker build -t cursoangular-app:latest .
+
+# 5. Roda o frontend conectado na mesma rede
+docker run -d -p 4200:80 \
+  --name cursoangular-app-container \
+  --network rede-app \
+  cursoangular-app:latest
