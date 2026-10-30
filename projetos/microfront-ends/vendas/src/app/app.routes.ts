@@ -12,6 +12,14 @@ export const routes: Routes = [
         }).then( modulo => modulo.App )
     },
     {
+        path: 'carrinho',
+        loadComponent: () => loadRemoteModule({
+            type: 'module',
+            remoteEntry: "http://localhost:4201/remoteEntry.js",
+            exposedModule: './Carrinho'
+        }).then( modulo => modulo.Carrinho )
+    },
+    {
         path: 'grafico',
         loadComponent: () => loadRemoteModule({
             type: 'module',
